@@ -1,0 +1,25 @@
+{
+	"schemaVersion": 1,
+	"id": "aiclient",
+	"version": "${version}",
+	"name": "AI Client",
+	"description": "A utility/cheat client for Minecraft 26.2 built as a Fabric mod. Press Right Shift for the ClickGUI.",
+	"authors": ["You & Claude"],
+	"license": "MIT",
+	"environment": "client",
+	"entrypoints": {
+		"client": ["dev.aiclient.AIClient"]
+	},
+	"mixins": [
+		{
+			"config": "aiclient.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~26.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
